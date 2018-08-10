@@ -34,8 +34,8 @@ def buy(request, pk):
 
     alipay = AliPay(
         appid="2016091700528920",
-        app_notify_url="http://127.0.0.1:8000/check_order/",  # POST,发送支付状态信息
-        return_url="http://127.0.0.1:8000/show/",  # GET,将用户浏览器地址重定向回原网站
+        app_notify_url="http://192.168.11.121:8000/check_order/",  # POST,发送支付状态信息
+        return_url="http://192.168.11.121:8000/show/",  # GET,将用户浏览器地址重定向回原网站
         app_private_key_path="keys/app_private_2048.txt",
         alipay_public_key_path="keys/alipay_public_2048.txt",
         debug=True,  # 默认True测试环境、False正式环境
@@ -61,8 +61,8 @@ def check_order(request):
     if request.method == 'POST':
         alipay = AliPay(
             appid="2016091700528920",
-            app_notify_url="http://127.0.0.1:8000/check_order/",  # POST,发送支付状态信息
-            return_url="http://127.0.0.1:8000/show/",  # GET,将用户浏览器地址重定向回原网站
+            app_notify_url="http://192.168.11.121:8000/check_order/",  # POST,发送支付状态信息
+            return_url="http://192.168.11.121:8000/show/",  # GET,将用户浏览器地址重定向回原网站
             app_private_key_path="keys/app_private_2048.txt",
             alipay_public_key_path="keys/alipay_public_2048.txt",
             debug=True,  # 默认True测试环境、False正式环境
@@ -99,8 +99,8 @@ def show(request):
     if request.method == "GET":
         alipay = AliPay(
             appid="2016091700528920",
-            app_notify_url="http://127.0.0.1:8000/check_order/",  # POST,发送支付状态信息
-            return_url="http://127.0.0.1:8000/show/",  # GET,将用户浏览器地址重定向回原网站
+            app_notify_url="http://192.168.11.121:8000/check_order/",  # POST,发送支付状态信息
+            return_url="http://192.168.11.121:8000/show/",  # GET,将用户浏览器地址重定向回原网站
             app_private_key_path="keys/app_private_2048.txt",
             alipay_public_key_path="keys/alipay_public_2048.txt",
             debug=True,  # 默认True测试环境、False正式环境
