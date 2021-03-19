@@ -3,7 +3,7 @@ bs4==0.0.1
 certifi==2018.4.16
 chardet==3.0.4
 Django==1.11
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 greenlet==0.4.13
 idna==2.7
 jieba==0.39
